@@ -18,8 +18,8 @@ def scrape_data():
         response = requests.get(url, headers=headers)
         soup = BeautifulSoup(response.text, 'html.parser')
 
-        titles = soup.find_all("div", class_="KzDlHZ")
-        prices = soup.find_all("div", class_="Nx9bqj _4b5DiR")
+        titles = soup.find_all("div", class_="RG5Slk")
+        prices = soup.find_all("div", attrs={"class": "hZ3P6w DeU9vF"})
 
         for title in titles:
             data["title"].append(title.get_text(strip=True))
