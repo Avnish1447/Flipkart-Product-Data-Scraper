@@ -1,73 +1,78 @@
-
 # 📦 Flipkart Product Scraper GUI
 
-A modern GUI application built with `customtkinter` that allows users to search for any product on **Flipkart**, scrape its **title** and **price**, and export the data into a `.csv` file — all with just one click.
+A modern desktop application built with `customtkinter` featuring an **Apple macOS Tahoe-inspired Frosted Glass interface**. It allows users to search for any product on **Flipkart**, extract real-time **titles** and **prices**, and export clean datasets into `.csv` files with just one click.
 
 ---
 
 ## ✨ Features
 
-- 🔍 **Search by Product Name** (no need to enter URLs)
-- 📊 Scrapes **product titles** and **prices** from Flipkart
-- 💾 Saves data into a **CSV file** named after the product
-- 🖥️ Clean and modern interface built with `customtkinter`
-- ✅ Instant feedback for success or failure
+- 🔍 **Search by Product Name**: Simply type any product keyword (no complex URLs needed).
+-  **macOS Tahoe Frosted Glass Aesthetic**: Floating frosted glass cards, specular highlight rims, and native San Francisco typography (`.AppleSystemUIFont`).
+- 🌓 **Dynamic Theme Switcher**: Easily toggle between **System**, **Light**, and **Dark** modes on the fly.
+- ⚡ **Multi-Threaded Scraping**: Background asynchronous execution keeps the UI smooth and responsive without beachballing or freezing.
+- 📊 **Slim Activity Indicator**: Real-time animated progress bar during data extraction.
+- ⌨️ **Keyboard Shortcut**: Press <kbd>Return / Enter</kbd> to scrape instantly.
+- 📂 **Native macOS Quick Actions**: One-click **"Show in Finder"** and **"Open CSV"** buttons once the scrape is complete.
+- 🛡️ **Resilient Selectors**: Multi-layout fallback support for diverse Flipkart product search categories.
+- 💾 **Automatic CSV Export**: Saves results into a formatted `.csv` file named after your search query.
 
 ---
 
 ## 🖼️ Interface Preview
 
-> <img width="377" alt="image" src="https://github.com/user-attachments/assets/cd104880-8383-4a7d-abbe-030537c1d1b0" />
-
+> <img width="480" alt="Flipkart Scraper Preview" src="https://github.com/user-attachments/assets/cd104880-8383-4a7d-abbe-030537c1d1b0" />
 
 ---
 
 ## 🔧 Requirements
 
-Ensure you have the following Python packages installed:
+Ensure you have Python 3.10+ installed (Python 3.12+ recommended for modern Tk 8.6/9.0 on macOS):
 
 ```bash
 pip install customtkinter requests beautifulsoup4 pandas
-````
+```
 
 ---
 
 ## 🚀 How to Run
 
-1. **Clone or download** the repository.
-2. Run the script:
-
+1. **Clone or download** the repository:
    ```bash
-   python flipkart_scraper_gui.py
+   git clone https://github.com/Avnish1447/Flipkart-Product-Data-Scraper.git
+   cd Flipkart-Product-Data-Scraper
    ```
-3. Enter the **product name** (e.g., `iPhone 16`) in the input field.
-4. Click **"Scrape Data"**.
-5. A file like `iphone16.csv` will be created in the same directory.
+
+2. **Run the application**:
+   ```bash
+   python3 "Data Scraper.py"
+   ```
+
+3. Enter any product name (e.g., `MacBook Air M3`, `iPhone 16`, `Sony WH-1000XM5`).
+4. Click **"Scrape"** or press <kbd>Return</kbd>.
+5. Use the quick action buttons to reveal the generated `.csv` file in Finder or open it immediately in your spreadsheet viewer.
 
 ---
 
 ## 📁 Output Format
 
-The CSV file will contain:
+The generated `.csv` file will contain:
 
-| title                | price     |
-| -------------------- | --------- |
-| iPhone 16 (128 GB)   | ₹xx,xxx   |
-| iPhone 16 Pro Max... | ₹x,xx,xxx |
-| ...                  | ...       |
+| title | price |
+| :--- | :--- |
+| Apple MacBook Air M3 - (16 GB/256 GB SSD/macOS Sequoia) | ₹1,14,900 |
+| Apple iPhone 16 (Black, 128 GB) | ₹69,900 |
+| ... | ... |
 
 ---
 
 ## 🛑 Disclaimer
 
-* This project is for **educational purposes only**.
-* Flipkart’s website structure may change over time, which could break the scraper.
-* Use responsibly and avoid sending excessive requests.
+- This project is for **educational purposes only**.
+- Flipkart’s website layout and CSS class names may change over time, which could require periodic selector updates.
+- Please use responsibly and respect rate limits.
 
 ---
 
 ## 🧑‍💻 Author
 
-[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/Avnish1447)   [![Email](https://img.shields.io/badge/-Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:avnishagrawal1447@gmail.com)   [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/avnish-agrawal-84b39728a/)
-
-
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/Avnish1447)   [![Email](https://img.shields.io/badge/-Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:avnishagrawal1447@gmail.com)   [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/avnish-agrawal-84b39728a/)
