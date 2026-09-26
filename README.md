@@ -20,7 +20,9 @@ A modern desktop application built with `customtkinter` featuring an **Apple mac
 
 ## 🖼️ Interface Preview
 
-> <img width="480" alt="Flipkart Scraper Preview" src="https://github.com/user-attachments/assets/cd104880-8383-4a7d-abbe-030537c1d1b0" />
+<img width="702" height="614" alt="Screenshot 2026-09-26 at 10 21 45 AM" src="https://github.com/user-attachments/assets/ebee6b04-92c7-4f21-8de5-2318d73557b6" />
+<img width="702" height="614" alt="Screenshot 2026-09-26 at 10 23 51 AM" src="https://github.com/user-attachments/assets/6645886c-81bd-4b47-ac0c-ad5d6d217598" />
+
 
 ---
 
